@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8203CC631CC503A1000C7BCC /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8203CC621CC503A1000C7BCC /* libsqlite3.0.tbd */; };
 		82108FCC1CBF4D8F0019F1A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82108FCB1CBF4D8F0019F1A3 /* AppDelegate.swift */; };
 		82108FCE1CBF4D8F0019F1A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82108FCD1CBF4D8F0019F1A3 /* ViewController.swift */; };
 		82108FD11CBF4D8F0019F1A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82108FCF1CBF4D8F0019F1A3 /* Main.storyboard */; };
@@ -16,6 +15,7 @@
 		82108FD91CBF4D8F0019F1A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82108FD71CBF4D8F0019F1A3 /* LaunchScreen.storyboard */; };
 		82108FE41CBF4D8F0019F1A3 /* ScoreboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82108FE31CBF4D8F0019F1A3 /* ScoreboardTests.swift */; };
 		82108FEF1CBF4D900019F1A3 /* ScoreboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82108FEE1CBF4D900019F1A3 /* ScoreboardUITests.swift */; };
+		8290D4691CCE488500416437 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8290D4681CCE488500416437 /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8203CC621CC503A1000C7BCC /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		82108FC81CBF4D8F0019F1A3 /* Scoreboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scoreboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82108FCB1CBF4D8F0019F1A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		82108FCD1CBF4D8F0019F1A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +51,7 @@
 		82108FEE1CBF4D900019F1A3 /* ScoreboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardUITests.swift; sourceTree = "<group>"; };
 		82108FF01CBF4D900019F1A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		828029361CC876030017DA86 /* Scoreboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scoreboard-Bridging-Header.h"; sourceTree = "<group>"; };
+		8290D4681CCE488500416437 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8203CC631CC503A1000C7BCC /* libsqlite3.0.tbd in Frameworks */,
+				8290D4691CCE488500416437 /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +83,7 @@
 		82108FBF1CBF4D8F0019F1A3 = {
 			isa = PBXGroup;
 			children = (
-				8203CC621CC503A1000C7BCC /* libsqlite3.0.tbd */,
+				8290D4681CCE488500416437 /* libsqlite3.0.tbd */,
 				82108FCA1CBF4D8F0019F1A3 /* Scoreboard */,
 				82108FE21CBF4D8F0019F1A3 /* ScoreboardTests */,
 				82108FED1CBF4D900019F1A3 /* ScoreboardUITests */,
