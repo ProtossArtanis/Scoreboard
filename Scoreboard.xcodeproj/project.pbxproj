@@ -15,6 +15,10 @@
 		82108FD91CBF4D8F0019F1A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82108FD71CBF4D8F0019F1A3 /* LaunchScreen.storyboard */; };
 		82108FE41CBF4D8F0019F1A3 /* ScoreboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82108FE31CBF4D8F0019F1A3 /* ScoreboardTests.swift */; };
 		82108FEF1CBF4D900019F1A3 /* ScoreboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82108FEE1CBF4D900019F1A3 /* ScoreboardUITests.swift */; };
+		828B225F1CDAE95700BFF62D /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 828B225E1CDAE95700BFF62D /* data.db */; };
+		828B22641CDAE98B00BFF62D /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828B22611CDAE98B00BFF62D /* SQLiteDB.swift */; };
+		828B22651CDAE98B00BFF62D /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828B22621CDAE98B00BFF62D /* SQLTable.swift */; };
+		828B22661CDAE98B00BFF62D /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828B22631CDAE98B00BFF62D /* String-Extras.swift */; };
 		8290D4691CCE488500416437 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 8290D4681CCE488500416437 /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +55,10 @@
 		82108FEE1CBF4D900019F1A3 /* ScoreboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardUITests.swift; sourceTree = "<group>"; };
 		82108FF01CBF4D900019F1A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		828029361CC876030017DA86 /* Scoreboard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Scoreboard-Bridging-Header.h"; sourceTree = "<group>"; };
+		828B225E1CDAE95700BFF62D /* data.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.db; sourceTree = "<group>"; };
+		828B22611CDAE98B00BFF62D /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SQLiteDB.swift; path = SQLiteDB/SQLiteDB.swift; sourceTree = "<group>"; };
+		828B22621CDAE98B00BFF62D /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SQLTable.swift; path = SQLiteDB/SQLTable.swift; sourceTree = "<group>"; };
+		828B22631CDAE98B00BFF62D /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String-Extras.swift"; path = "SQLiteDB/String-Extras.swift"; sourceTree = "<group>"; };
 		8290D4681CCE488500416437 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -83,6 +91,8 @@
 		82108FBF1CBF4D8F0019F1A3 = {
 			isa = PBXGroup;
 			children = (
+				828B22601CDAE96500BFF62D /* SQLiteDB */,
+				828B225E1CDAE95700BFF62D /* data.db */,
 				8290D4681CCE488500416437 /* libsqlite3.0.tbd */,
 				82108FCA1CBF4D8F0019F1A3 /* Scoreboard */,
 				82108FE21CBF4D8F0019F1A3 /* ScoreboardTests */,
@@ -132,6 +142,16 @@
 				82108FF01CBF4D900019F1A3 /* Info.plist */,
 			);
 			path = ScoreboardUITests;
+			sourceTree = "<group>";
+		};
+		828B22601CDAE96500BFF62D /* SQLiteDB */ = {
+			isa = PBXGroup;
+			children = (
+				828B22611CDAE98B00BFF62D /* SQLiteDB.swift */,
+				828B22621CDAE98B00BFF62D /* SQLTable.swift */,
+				828B22631CDAE98B00BFF62D /* String-Extras.swift */,
+			);
+			name = SQLiteDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82108FD91CBF4D8F0019F1A3 /* LaunchScreen.storyboard in Resources */,
+				828B225F1CDAE95700BFF62D /* data.db in Resources */,
 				82108FD61CBF4D8F0019F1A3 /* Assets.xcassets in Resources */,
 				82108FD11CBF4D8F0019F1A3 /* Main.storyboard in Resources */,
 			);
@@ -266,8 +287,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				82108FCE1CBF4D8F0019F1A3 /* ViewController.swift in Sources */,
+				828B22661CDAE98B00BFF62D /* String-Extras.swift in Sources */,
+				828B22641CDAE98B00BFF62D /* SQLiteDB.swift in Sources */,
 				82108FCC1CBF4D8F0019F1A3 /* AppDelegate.swift in Sources */,
 				82108FD41CBF4D8F0019F1A3 /* Scoreboard.xcdatamodeld in Sources */,
+				828B22651CDAE98B00BFF62D /* SQLTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

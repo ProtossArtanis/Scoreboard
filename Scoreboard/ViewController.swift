@@ -10,10 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var db:SQLiteDB!
+    
+    var displaycache = 0
+    
+    func loadResult(number:String)
+    {
+        
+    }
+    
     @IBAction func neScore01(sender: AnyObject) {
+        
     }
     @IBAction func neScore02(sender: AnyObject) {
     }
+    @IBOutlet weak var AOutResult01: UITextField!
+    @IBOutlet weak var AOutResult02: UITextField!
+    
+    @IBOutlet weak var BOutResult01: UITextField!
+    @IBOutlet weak var BOutResult02: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
